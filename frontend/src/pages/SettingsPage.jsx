@@ -1,10 +1,14 @@
-import { useThemeStore } from "../store/useThemeStore";
 import { THEMES } from "../constants";
+import { useThemeStore } from "../store/useThemeStore";
 import { Send } from "lucide-react";
 
 const PREVIEW_MESSAGES = [
   { id: 1, content: "Hey! How's it going?", isSent: false },
-  { id: 2, content: "I'm doing great! Trying new themes." },
+  {
+    id: 2,
+    content: "I'm doing great! Just working on some new features.",
+    isSent: true,
+  },
 ];
 
 const SettingsPage = () => {
@@ -61,7 +65,7 @@ const SettingsPage = () => {
                       J
                     </div>
                     <div>
-                      <h3 className="font-medium text-sm">Wrong Dude</h3>
+                      <h3 className="font-medium text-sm">John Doe</h3>
                       <p className="text-xs text-base-content/70">Online</p>
                     </div>
                   </div>

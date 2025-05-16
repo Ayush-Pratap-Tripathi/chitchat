@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import {
   Eye,
@@ -10,6 +10,7 @@ import {
   User,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+
 import AuthImagePattern from "../components/AuthImagePattern";
 import toast from "react-hot-toast";
 
@@ -76,7 +77,7 @@ const SignUpPage = () => {
                 <input
                   type="text"
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="Naam likh Naam"
+                  placeholder="Your Name"
                   value={formData.fullName}
                   onChange={(e) =>
                     setFormData({ ...formData, fullName: e.target.value })
@@ -172,5 +173,4 @@ const SignUpPage = () => {
     </div>
   );
 };
-
 export default SignUpPage;
